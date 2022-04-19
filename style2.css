@@ -1,0 +1,140 @@
+body{
+    background: #ebe9eb;
+
+}
+.contenedor{ 
+    display: flex;
+}
+.btn{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background:#00D397;
+    color: #fff;
+
+}
+h4{
+    font-family: 'Fredoka One', cursive;
+    font-size:25px;
+    color: #fff;
+    background:#79469D;
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px;
+    width: 600px;
+
+}
+#codigo{
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    right: 300px;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+#desplazamiento1{
+    display: inline-flex;
+    margin: 5px;
+    padding: 10px;
+    position: fixed;
+    bottom: 440px;
+    width: 50px;
+    right: 835px;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#btn-decodificador {
+    text-align: center;
+    position: fixed;
+    bottom:440px;
+    right: 700px;
+    width: 100px;
+    border: 3px solid #79469D;
+
+}
+#paciente{
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    bottom:440px;
+    width: 400px;
+    right: 300px;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#btn-mas {
+    justify-content: center;
+    position: fixed;
+    bottom:10px;
+    right: 700px;
+    width: 70px;
+    border: 3px solid #79469D;
+
+}
+#codigo2{
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    right: 300px;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#desplazamiento2{
+    display: inline-flex;
+    margin: 5px;
+    padding: 10px;
+    position: fixed;
+    bottom: 440px;
+    width: 50px;
+    right: 157px;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#btn-codificador{
+    text-align: center;
+    position: fixed;
+    bottom:440px;
+    right: 25px;
+    width: 100px;
+    border: 3px solid #79469D;
+}
+#nuevo{
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    bottom:500px;
+    width: 400px;
+    right: 500px;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box
+}
+
+
+footer{
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    justify-content: last baseline;
+    text-align: center;
+}
