@@ -464,3 +464,24 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+
+
+### Descripcion del proyecto:
+
+* [] Esta aplicación web, está creada principalmente para psicologxs que necesiten guardar datos sobre sus
+pacientes de forma segura. Una de las labores de quienes son profesionales de la salud es recabar
+informacion sobre las personas que atienden, tanto para conocer su historia de vida, sus redes de apoyo, 
+sus antecedentes medicos, como para llevar un registro de las sesiones con el paciente, en este caso, 
+la terapia psicológica. Quienes ingresen en la pagina deben registrarse con su correo electronico, pueden cifrar el nombre de su paciente, el mes en el que comenzó con ese paciente, o cualquier palabra que no contega numeros, ademas debe ingresar un numero que puede ser la fecha en que ingreso la persona atendida, o cualquer dato numerico que le sirva para reconocer a su paciente. Al ingresar puede ver los archivos de su paciente,
+los primeros datos ingresados, hasta los ultimos registros de las sesiones. Con uno de los botones puede cifrar un texto con su dato numerico para registrar un nuevo paciente.  
+Esta aplicacion web puede servir a lxs profesionales para almacenar datos sensibles como son las terapias, sin el riesgo de que otras personas puedan leer el contenido de sus registros, notas y archivos, asi puede ser un recurso digital util y a la mano para registrar cada dato que consideren relevante para su paciente y el proceso de terapia psicologica.
+
+*[Encuesta](https://docs.google.com/forms/d/e/1FAIpQLSf_PqcMt9hcbUyzRwalf_92mCLLvdRtXyOun2Zy4okGWqOc1A/viewform?usp=sf_link)
+
+*[Prototipo](https://www.figma.com/file/LLjpCfQ3pjpRgNO3PituPF/Prototipo?node-id=0%3A1)
+
+*[Planificación](https://github.com/users/Noemifloresalcayaga/projects/1)
+
+Html
+Css
+Javascript
