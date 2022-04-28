@@ -1,30 +1,39 @@
 import cipher from './cipher.js';
 
+document.getElementById("btn-mas").addEventListener("click",
+function(){
+    /* Funcion para que al hacer click en el boton aparezca el contenedor */
+    let nuevoPaciente = document.getElementById("nuevo-paciente")
+    /*guardar la section de html para despues trabajarla 
+    de forma mas ordenada */
+    nuevoPaciente.style.display = "block";
+});
+
 document.getElementById("btn-codificador").addEventListener("click",
-function (){ 
+function () { 
+    /* funcion para que al hacer click en el boton
+    se traigan los valores de ambos elementos  */
 let codigo2 = document.getElementById("codigo2").value;
 let desplazamiento2 = parseInt(document.getElementById("desplazamiento2").value);
-alert(codigo2);
-alert(desplazamiento2);
 
+/* indica que resultado sera igual a la funcion */
+let resultado =cipher.encode(desplazamiento2, codigo2) 
+/* indica que el valor de nuevo sera resultado */
+document.getElementById("nuevo").value = resultado; 
+alert (`El codigo de su nueva paciente ${codigo2}, es: ${resultado}`);
 
-let resultado2 =cipher.encode(codigo2,desplazamiento2);
-alert(resultado2);
-document.getElementById("nuevo").value = resultado2;
-true
 });
 
 document.getElementById("btn-decodificador").addEventListener("click",
-function (){ 
+function () { 
 let codigo = document.getElementById("codigo").value;
 let desplazamiento1 = parseInt(document.getElementById("desplazamiento1").value);
-alert(codigo);
-alert(desplazamiento1);
 
 
-let resultado =cipher.decode(codigo,desplazamiento1);
-alert(resultado);
+
+let resultado =cipher.decode(desplazamiento1, codigo);
 document.getElementById("paciente").value = resultado;
-true
+alert(`Paciente: ${resultado} Inicio: 06/04/2022`);
+
 });
 

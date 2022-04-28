@@ -1,37 +1,49 @@
+
 const cipher = {
-  encode: (codigo2,desplazamiento2) => {
-   let resultado2 = "";
-   let letras2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-   desplazamiento2 = ((desplazamiento2 % 26 ) + 26) % 26;
-
-   if(codigo2) {
-     for(let i=0; i < codigo2.length; i++){
-        if(letras2.indexOf(codigo2[i])  != -1 ){
-           let posicion2 = ((letras2.indexOf(codigo2[i]) + desplazamiento2)%26);
+  encode: (desplazamiento2, codigo2) => {
+    
+   let resultado = "";
+   let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   let codigo = codigo2.toUpperCase();
+   if(codigo) {
+     /*permite que pueda recorrer el texto ingresado hasta la ultima letra
+     ingresada sumandole uno en cada ciclo.Si no tuviese la condicion no
+     pararia de recorrer */
+     for(let i=0; i < codigo.length; i++){ 
+       /* se asocia el ciclo con la variable letras para que se devuelva el
+       valor de la posicion de cada letra  */ 
+       if(letras.indexOf(codigo[i])  != -1 ){
+        /*permite obtener un numero para cada posicion de cada letra */
+           let ascii = codigo.charCodeAt(i);
+           /* se utiliza el numero para realizar la formula de cifrado
+           se devuelve la nueva letra  */
+           let posicion = String.fromCharCode ((ascii - 65 + desplazamiento2)% 26 + 65);
            
-           resultado2 += letras2[posicion2];
+           /*permite que cada nueva letra se sume a la siguiente nueva letra */
+           resultado += posicion; 
          }
         else{
-           resultado2 += codigo2[i];
+           /* indica que si existe un valor que no se encuentra
+           en letras se devuelva sin cambios */                                                
+           resultado += codigo[i];
        }
     }
    }
-  return resultado2;
+   /* se obtiene la nueva palabra */
+  return resultado;
   },
 
-  decode: (codigo,desplazamiento1) => {
+  decode: (desplazamiento1, codigo) => {
     let resultado = "";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    desplazamiento1 = ((desplazamiento1 % 26 ) - 26) % 26;
-
     if(codigo) {
      for(let i=0; i < codigo.length; i++){
        if(letras.indexOf(codigo[i])  != -1 ){
-          let posicion = ((letras.indexOf(codigo[i]) - desplazamiento1)%26);
           
-          resultado += letras[posicion];
+         let ascii = codigo.charCodeAt(i);
+         let posicion = String.fromCharCode ((ascii + 65 - desplazamiento1) % 26 + 65);
+          
+          resultado += posicion;
         }
        else{
           resultado += codigo[i];

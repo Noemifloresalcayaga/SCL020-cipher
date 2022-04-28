@@ -9,37 +9,34 @@
         <link rel="stylesheet" href= "style2.css">
     </head>
     <body>
-         <section class="contenedor">
-             <div class="repositorio">
-                <h4>Escribe el codigo de tu paciente</h4>
-                <div class="inicio">
-                  <input type="text" id="codigo"> 
-                  <input type="number" id="desplazamiento1">
-                  <input type ="text" id ="paciente">
-                  <div class="btn" id="btn-decodificador">Buscar</div>
-             
-                 </div>
-                
-               
-               
-               <div class="btn" id="btn-mas">Nuevo paciente</div>
-             </div>
+      <header> 
+        <h1 class = "titulo"> Psicodata </h1>
+      </header>
 
-            <div class="nuevo.paciente">
-                <h4>Ingresa tu nuevo paciente</h4>
-               <input type="text" id="codigo2">
-                <input type="number" id="desplazamiento2">
-                <input type ="text" id ="nuevo">
-              <div class="btn" id="btn-codificador">Guardar</div>
-              
-      
-               </div>
-           </section>
-             
-       
-       <div>
+      <nav>
+        <a class="btn" id="btn-mas" href="#h4">Nuevo paciente</a>
+      </nav>
+
+      <main class="contenedor">
+          <section class="repositorio">
+             <h4 class="titulo">Escribe el codigo de tu paciente</h4>
+             <input type="text" id="codigo" class="texto"> 
+             <input type ="text"  id ="paciente" class="texto">
+             <input type="number" id="desplazamiento1">
+             <div class="btn" id="btn-decodificador">Buscar</div>
+          </section>
+
+          <section class="nuevo-paciente" id="nuevo-paciente">
+             <h4 class="titulo">Ingresa tu nuevo paciente</h4>
+             <input type="text"  id="codigo2" class="texto">
+             <input type ="text"  id ="nuevo" class="texto">
+             <input type="number" id="desplazamiento2">
+             <div class="btn" id="btn-codificador">Guardar</div>
+         </section>
+      </main>
+     
         <footer>Creditos a Noemí.SCL020</footer>
-      </div>
+      
       <script src="index.js" type="module"></script>
   </body>
 </html>

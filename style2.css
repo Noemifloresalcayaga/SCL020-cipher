@@ -1,140 +1,133 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background: #ebe9eb;
-
+    font-family: 'Fredoka One', cursive;
+    
 }
 .contenedor{ 
     display: flex;
+    margin: 30px;
+    padding: 30px;
+}
+.repositorio{
+    background: #ffefff;
+    padding: 50px;
+    margin: 10px;
+}
+.nuevo-paciente{
+    display: none;
+    background: #ffefff;
+    padding: 50px;
+    margin: 10px;
+}
+.texto{
+    display: inline-flex;
+    text-transform: uppercase;
+    background:#fff;
+    color: rgb(14, 13, 13);
+    border: 1px solid #e2e6ec;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0px;
+    padding: 20px;
+    
+}
+.titulo {
+    font-family: 'Fredoka One', cursive;
+    background:#9b51e0;
+    color: #fff;
+    box-sizing: border-box;
+    border: 10px;
+    text-align: center;
+}
+h1{
+    margin: 0px;
+    padding: 40px;
+    font-size: 60px ;
+    width: 1500px;   
 }
 .btn{
-    display: inline-block;
-    margin: 5px;
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    margin: 10px;
     padding: 10px;
     background:#00D397;
     color: #fff;
-
+    text-align: center;
+    border: 3px solid #79469D;
+    border-radius: 30px;  
 }
 h4{
-    font-family: 'Fredoka One', cursive;
     font-size:25px;
-    color: #fff;
-    background:#79469D;
-    text-align: center;
-    margin-top: 20px;
+    margin: 10px;
     padding: 25px;
-    width: 600px;
-
+    width: 500px;
 }
 #codigo{
-    display: inline-flex;
     margin: 10px;
     padding: 10px;
-    width: 400px;
-    right: 300px;
-    background:#fff;
-    color: rgb(14, 13, 13);
-    border: 1px solid #e2e6ec;
-    border-radius: 4px;
-    box-sizing: border-box;
-
+    width: 300px;
+    right: 300px;   
 }
-#desplazamiento1{
+#desplazamiento1, #desplazamiento2{
     display: inline-flex;
-    margin: 5px;
+    position: absolute;
+    margin: 0px;
     padding: 10px;
-    position: fixed;
-    bottom: 440px;
+    bottom: 80px;
     width: 50px;
-    right: 835px;
     background:#fff;
     color: rgb(14, 13, 13);
     border: 1px solid #e2e6ec;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 4px;   
 }
-#btn-decodificador {
-    text-align: center;
-    position: fixed;
-    bottom:440px;
-    right: 700px;
+#btn-decodificador, #btn-codificador {
+    bottom: 20px;
     width: 100px;
-    border: 3px solid #79469D;
-
 }
 #paciente{
-    display: inline-flex;
     margin: 10px;
     padding: 10px;
     bottom:440px;
-    width: 400px;
-    right: 300px;
-    background:#fff;
-    color: rgb(14, 13, 13);
-    border: 1px solid #e2e6ec;
-    border-radius: 4px;
-    box-sizing: border-box;
+    width: 380px;
+    right: 300px;    
 }
 #btn-mas {
-    justify-content: center;
-    position: fixed;
-    bottom:10px;
-    right: 700px;
-    width: 70px;
-    border: 3px solid #79469D;
-
+    margin: 30px;
+    padding: 10px;
+    bottom:480px;
+    right: 0;
+    width: 200px;  
+    text-decoration: none; 
 }
 #codigo2{
-    display: inline-flex;
     margin: 10px;
     padding: 10px;
-    width: 400px;
-    right: 300px;
-    background:#fff;
-    color: rgb(14, 13, 13);
-    border: 1px solid #e2e6ec;
-    border-radius: 4px;
-    box-sizing: border-box;
+    width: 300px;
+    right: 300px;   
 }
-#desplazamiento2{
-    display: inline-flex;
-    margin: 5px;
-    padding: 10px;
-    position: fixed;
-    bottom: 440px;
-    width: 50px;
-    right: 157px;
-    background:#fff;
-    color: rgb(14, 13, 13);
-    border: 1px solid #e2e6ec;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-#btn-codificador{
-    text-align: center;
-    position: fixed;
-    bottom:440px;
-    right: 25px;
-    width: 100px;
-    border: 3px solid #79469D;
-}
+
 #nuevo{
-    display: inline-flex;
     margin: 10px;
     padding: 10px;
     bottom:500px;
-    width: 400px;
-    right: 500px;
-    background:#fff;
-    color: rgb(14, 13, 13);
-    border: 1px solid #e2e6ec;
-    border-radius: 4px;
-    box-sizing: border-box
+    width: 380px;
+    right: 500px;    
 }
-
-
 footer{
-    margin: 10px;
-    padding: 10px;
-    color: #fff;
-    justify-content: last baseline;
+    display: inline-flex;
+    position: fixed;
+    align-content: center;
+    margin: 0px;
+    padding: 40px;
+    right: 600px;
+    bottom: 0px;
+    color: #7A7A7A;
     text-align: center;
 }

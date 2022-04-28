@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background:#ebe9eb;
     font-family:'Fredoka One', cursive;
@@ -14,7 +17,7 @@ form{
 
 }
 h1{
-    background:#79469D;
+    background:#9b51e0;
     text-align: center;
     color: #fff;
     margin-top: 70px;
@@ -35,7 +38,7 @@ h1{
 }
 .btn-ingreso{
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     width: 150px;
     background:#00D397;
@@ -49,7 +52,7 @@ h1{
 footer{
     margin: 10px;
     padding: 10px;
-    color: #fff;
+    color: #7A7A7A;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -59,12 +62,12 @@ footer{
     
 }
 .registro{
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     background:#00D397;
     color: #fff;
     position: fixed;
-    bottom:550px;
+    bottom:500px;
     right: 0;
     width: 200px;
     border: 3px solid #79469D;
