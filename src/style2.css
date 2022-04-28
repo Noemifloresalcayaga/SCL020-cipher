@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     background: #ebe9eb;
     font-family: 'Fredoka One', cursive;
@@ -79,7 +81,7 @@ h4{
     margin: 0px;
     padding: 10px;
     bottom: 80px;
-    width: 30px;
+    width: 50px;
     background:#fff;
     color: rgb(14, 13, 13);
     border: 1px solid #e2e6ec;

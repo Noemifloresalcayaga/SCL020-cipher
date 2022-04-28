@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background:#ebe9eb;
     font-family:'Fredoka One', cursive;

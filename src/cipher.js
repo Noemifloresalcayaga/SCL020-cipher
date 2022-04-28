@@ -6,29 +6,30 @@ const cipher = {
    let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    let codigo = codigo2.toUpperCase();
    if(codigo) {
-     for(let i=0; i < codigo.length; i++){
-       console.log([i])
-       /* definiendo la  condicion de que cada valor de cada letra 
-       que pase por el ciclo for se encuentre dentro de la variable letras*/
-        if(letras.indexOf(codigo[i])  != -1 ){
-          /*definiendo la variable ascii para asignar al valor de cada letra
-          su codigo ascii */
+     /*permite que pueda recorrer el texto ingresado hasta la ultima letra
+     ingresada sumandole uno en cada ciclo.Si no tuviese la condicion no
+     pararia de recorrer */
+     for(let i=0; i < codigo.length; i++){ 
+       /* se asocia el ciclo con la variable letras para que se devuelva el
+       valor de la posicion de cada letra  */ 
+       if(letras.indexOf(codigo[i])  != -1 ){
+        /*permite obtener un numero para cada posicion de cada letra */
            let ascii = codigo.charCodeAt(i);
-          /* definiendo la variable posicion para aplicar la formula de cifrado (se resta 
-          valor ascii menos 65 que es la primera posicion del codigo ascii,
-          se suma el valor del offset* el residuo de 26 es para dar las vueltas en el alfabeto */
+           /* se utiliza el numero para realizar la formula de cifrado
+           se devuelve la nueva letra  */
            let posicion = String.fromCharCode ((ascii - 65 + desplazamiento2)% 26 + 65);
-          
-           /* incremento del valor de resultado con el valor de  posicion*/
+           
+           /*permite que cada nueva letra se sume a la siguiente nueva letra */
            resultado += posicion; 
          }
         else{
-          /* si el valor no se encuentra el resultado se incrementa con el texto
-          a cifrae*/                                                      
+           /* indica que si existe un valor que no se encuentra
+           en letras se devuelva sin cambios */                                                
            resultado += codigo[i];
        }
     }
    }
+   /* se obtiene la nueva palabra */
   return resultado;
   },
 
